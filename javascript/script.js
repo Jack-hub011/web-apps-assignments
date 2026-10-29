@@ -40,6 +40,29 @@ function addNumbers(){
     let num2 = document.getElementById("num2").value;
     let result = parseInt(num1) + parseInt(num2);
 
+
+
     document.getElementById("sumOutput").textContent = "Sum: " + result;
 }
 
+function getTextLength(){
+    let text = document.getElementById("text").value;
+    document.getElementById("textLength").textContent = "Text Length: " + text.length;
+}
+  
+  function togglePassword(){
+    let passwordInput = document.getElementById("password");
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+    } else {
+      passwordInput.type = "password";
+    }
+  } 
+
+
+
+  function changeFont() {
+    let fontExample = document.getElementById("fontExample");
+    fontExample.style.fontSize = "24px";
+    fontExample.style.color = "blue";
+  }
